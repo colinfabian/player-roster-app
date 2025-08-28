@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buffalo Bills Roster by Week</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }
+    .container { max-width: 1200px; margin: 30px auto; background: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 2px 8px #0001; }
+    h1 { text-align: center; }
+    .section { margin-bottom: 32px; }
+    .section h2 { border-bottom: 2px solid #eee; padding-bottom: 6px; margin-bottom: 16px; }
+    .position-group { margin-bottom: 18px; }
+    .position-group h3 { margin: 8px 0 8px 0; color: #2a2a2a; }
+    .players { display: flex; flex-wrap: wrap; gap: 16px; }
+    .player-card { background: #f0f4fa; border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; min-width: 260px; box-shadow: 0 1px 4px #0001; }
+    .player-card img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; margin-right: 16px; border: 2px solid #d1d1d1; }
+    .player-info { display: flex; flex-direction: column; }
+    .player-name { font-weight: bold; font-size: 1.1em; }
+    .player-meta { color: #555; font-size: 0.97em; }
+    .week-select { display: flex; justify-content: center; margin-bottom: 32px; }
+    select { font-size: 1.1em; padding: 6px 12px; border-radius: 6px; border: 1px solid #bbb; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Buffalo Bills Roster by Week</h1>
+    <div class="week-select">
+      <label for="week">Select Week: </label>
+      <select id="week"></select>
+    </div>
+    <div id="roster"></div>
+  </div>
+  <script src="roster.js"></script>
+</body>
+</html>
